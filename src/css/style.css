@@ -1,0 +1,75 @@
+html{
+    min-width: 320px;
+    width: 1440px;
+}
+
+body{
+    font-family: "Public Sans", sans-serif;
+    font-weight: 300;
+    width: 100vw;
+}
+
+.art-pieces{
+    display: flex;
+    margin-top: 120px;
+    justify-content: center;
+    align-items: center;   
+}
+
+.art-pieces li {
+    margin: 20px;
+    position: relative;
+    height: 434px;
+    top: 1px;
+    padding: 1px;
+    transition: ease-in-out;
+}
+
+
+.art-pieces li:hover {
+    background-color: #000000;
+}
+
+.art-pieces li .piece-information{
+    position: absolute;
+    left: 45px;
+    bottom: 65px;
+    color: #ffffff;
+}
+
+.piece-name{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.author-name {
+   font-weight: 400;
+   font-size: 17px 
+}
+
+@media (max-width: 1100px) {
+    .art-pieces{
+        flex-wrap: wrap;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 759px) {
+    html{
+        width: 375px;
+    }
+
+    .art-pieces{
+        margin: 45px 20px;
+        flex-direction: column;
+    }
+
+    .art-pieces li {
+        margin: 0;
+    }
+
+    .art-pieces li .piece-information{
+        left: 22px;
+        bottom: 20px;
+    }
+}
